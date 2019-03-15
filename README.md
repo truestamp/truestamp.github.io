@@ -1,4 +1,4 @@
-# Stamptime.io Landing Page
+# Truestamp.com Landing Page
 
 Minimal landing page for developers.
 
