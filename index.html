@@ -1,134 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="p:domain_verify" content="7f152b2af2dfea86ca84b6ea7781c79b" />
-
-    <title>truestamp | time for all</title>
-
-    <link rel="icon" href="favicon.ico" type="image/png" />
-
-    <!-- Google Tag Manager -->
-    <script>
-      ;(function(w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : ""
-        j.async = true
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, "script", "dataLayer", "GTM-MBRH5D3")
-    </script>
-    <!-- End Google Tag Manager -->
-
+    <title>Truestamp | GitHub Landing</title>
     <link
       href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
       rel="stylesheet"
     />
     <link
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/themes/indigo-white.css" />
-    <!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
-
-    <script type="text/javascript">
-      var _iub = _iub || []
-      _iub.csConfiguration = {
-        lang: "en",
-        siteId: 1784956,
-        enableCcpa: true,
-        countryDetection: true,
-        consentOnDocument: true,
-        cookiePolicyId: 41454278,
-        localConsentDomain: "truestamp.com",
-        banner: {
-          acceptButtonDisplay: true,
-          customizeButtonDisplay: true,
-          position: "float-top-center"
-        },
-        callback: {
-          onPreferenceExpressedOrNotNeeded: function(preference) {
-            dataLayer.push({
-              iubenda_ccpa_opted_out: _iub.cs.api.isCcpaOptedOut()
-            })
-            if (!preference) {
-              dataLayer.push({
-                event: "iubenda_preference_not_needed"
-              })
-            } else {
-              if (preference.consent === true) {
-                dataLayer.push({
-                  event: "iubenda_consent_given"
-                })
-              } else if (preference.consent === false) {
-                dataLayer.push({
-                  event: "iubenda_consent_rejected"
-                })
-              } else if (preference.purposes) {
-                for (var purposeId in preference.purposes) {
-                  if (preference.purposes[purposeId]) {
-                    dataLayer.push({
-                      event: "iubenda_consent_given_purpose_" + purposeId
-                    })
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <script
-      type="text/javascript"
-      src="//cdn.iubenda.com/cs/iubenda_cs.js"
-      charset="UTF-8"
-      async
-    ></script>
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MBRH5D3"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <main>
-      <div class="intro">Hello. We're Truestamp.</div>
+      <div class="intro">Hello, developers. We're Truestamp.</div>
       <div class="tagline">
-        Simple, fast, and light cryptographic timestamps for all.
+        Truestamp provides a platform to create and verify commitments of the
+        provenance, timestamp, and authenticity of your most valued digital
+        assets.
+
+        <br />
+        <br />
+
+        <a href="https://github.com/truestamp">github.com/truestamp</a>
       </div>
+
       <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
       <div class="icons-social">
-        <a target="_blank" href="https://github.com/truestamp"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a target="_blank" href="https://twitter.com/truestamp"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a target="_blank" href="https://medium.com/@truestamp"
-          ><i class="fab fa-medium"></i
-        ></a>
+        <a href="https://github.com/truestamp"><i class="fab fa-github"></i></a>
       </div>
     </main>
   </body>
