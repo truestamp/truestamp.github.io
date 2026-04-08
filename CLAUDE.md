@@ -14,4 +14,4 @@ The `.nojekyll` file disables Jekyll processing on GitHub Pages — do not remov
 
 ## Deployment
 
-Push to `master` — GitHub Pages serves the site automatically.
+Push to `main` — GitHub Pages serves the site automatically.

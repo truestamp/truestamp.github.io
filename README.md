@@ -14,4 +14,4 @@ Open <http://localhost:8080>.
 
 ## Deployment
 
-Push to `master` — GitHub Pages serves the site automatically.
+Push to `main` — GitHub Pages serves the site automatically.
