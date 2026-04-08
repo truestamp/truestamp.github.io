@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-26.67 -24.73 1020 1020">
+  <title>Truestamp Logo Mark</title>
+  <desc>Copyright © 2026 Truestamp Inc. All rights reserved. No license is granted for use, modification, or distribution without explicit written permission.</desc>
+  <defs>
+    <radialGradient id="grad-mark-r" fx="0" fy="0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-168.70935,134.34264,134.34264,168.70935,734.06793,432.2673)" spreadMethod="pad">
+      <stop stop-color="#2a3990" offset="0" />
+      <stop stop-color="#00aeef" offset="1" />
+    </radialGradient>
+    <radialGradient id="grad-mark-l" fx="0" fy="0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-157.77449,121.84565,121.84565,157.77449,477.87967,327.60501)" spreadMethod="pad">
+      <stop stop-color="#2a3990" offset="0" />
+      <stop stop-color="#00aeef" offset="1" />
+    </radialGradient>
+  </defs>
+  <path fill="#1459a9" d="M 0,0 -299.745,171.452 -352.57,141.565 1.737,-63.967 352.57,139.993 302.694,171.452 Z" transform="matrix(1.3333333,0,0,-1.3333333,496.5732,681.80973)" />
+  <path fill="#1459a9" d="M 0,0 -299.745,171.452 -352.57,141.566 1.737,-63.967 352.57,139.993 302.694,171.452 Z" transform="matrix(1.3333333,0,0,-1.3333333,496.5732,885.24453)" />
+  <path fill="url(#grad-mark-r)" d="M 345.81,569.853 592.003,431.825 725,506.884 480.149,649.211 Z" transform="matrix(1.3333333,0,0,-1.3333333,0,970.53333)" />
+  <path fill="url(#grad-mark-l)" d="M 268.565,524.224 132.578,443.894 374.167,308.888 511.471,386.376 Z" transform="matrix(1.3333333,0,0,-1.3333333,0,970.53333)" />
+  <path fill="#1459a9" d="M 0,0 111.854,-217.385 -134.339,-79.357 Z" transform="matrix(1.3333333,0,0,-1.3333333,640.1992,104.91947)" />
+  <path fill="#1459a9" d="M 0,0 135.987,80.33 241.588,-135.005 Z" transform="matrix(1.3333333,0,0,-1.3333333,176.7708,378.67533)" />
+  <path fill="#1459a9" d="m 0,0 -250.755,-142.033 -104.202,-62.06 54,-31.325 350.833,203.959 z" transform="matrix(1.3333333,0,0,-1.3333333,473.2764,-2.6666667e-4)" />
+</svg>

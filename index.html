@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Truestamp | GitHub Landing</title>
+    <title>Truestamp on GitHub</title>
+    <meta name="description" content="Truestamp's public repositories on GitHub." />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="canonical" href="https://truestamp.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <style>
       *, *::before, *::after {
         box-sizing: border-box;
@@ -13,41 +18,60 @@
 
       html {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-        font-size: clamp(14px, 1.25vw, 20px);
+        background: #0d1117;
+        color: #e6edf3;
       }
 
       main {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        min-height: 100svh;
         justify-content: center;
         align-items: center;
-        padding: 0 2rem;
+        padding: 2rem;
         text-align: center;
-        background: #0d1117;
-        color: #e6edf3;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: inherit;
+        text-decoration: none;
+        border-radius: 0.25rem;
+      }
+
+      a:focus-visible {
+        outline: 2px solid #58a6ff;
+        outline-offset: 0.5rem;
       }
 
       img {
+        display: block;
         width: min(80vw, 500px);
         height: auto;
       }
 
-      p {
+      span {
         font-size: 1.25rem;
-        margin: 1rem 0;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
       }
 
-      a {
-        color: inherit;
+      a:hover span {
+        text-decoration-thickness: 2px;
       }
     </style>
   </head>
 
   <body>
     <main>
-      <a href="https://github.com/truestamp" aria-label="Truestamp on GitHub"><img src="truestamp-horizontal-full-color-white-text-pad10.svg" alt="Truestamp" /></a>
-      <p><a href="https://github.com/truestamp">github.com/truestamp</a></p>
+      <a href="https://github.com/truestamp">
+        <h1><img src="truestamp-horizontal-full-color-white-text-pad10.svg" alt="Truestamp" width="1160" height="308" /></h1>
+        <span>github.com/truestamp</span>
+      </a>
     </main>
   </body>
 </html>
