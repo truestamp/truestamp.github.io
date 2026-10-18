@@ -6,7 +6,7 @@
     <title>Page not found | Truestamp on GitHub</title>
     <meta name="robots" content="noindex" />
     <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0d1117" />
+    <meta name="theme-color" content="#1e2225" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
       *, *::before, *::after {
@@ -16,56 +16,154 @@
       }
 
       html {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-        background: #0d1117;
-        color: #e6edf3;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        background: #1e2225;
+        color: #e0e5e9;
+        -webkit-text-size-adjust: 100%;
       }
 
       main {
+        --logo: min(12rem, 100vw - 3rem);
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: min(100%, 36rem);
         min-height: 100vh;
         min-height: 100svh;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        padding: 2rem;
-        text-align: center;
+        margin-inline: auto;
+        padding: 3rem 1.5rem;
+        overflow-x: clip;
       }
 
       a {
         color: inherit;
         border-radius: 0.25rem;
-        text-underline-offset: 0.2em;
       }
 
       a:focus-visible {
-        outline: 2px solid #58a6ff;
+        outline: 2px solid #468fee;
         outline-offset: 0.25rem;
       }
 
-      img {
+      /* The logo SVG pads its artwork by 10% of the artwork's width on each side.
+         --logo is the visible artwork width; pull the image back by the padding so the mark lines up with the text. */
+      .logo {
         display: block;
-        width: min(80vw, 500px);
+        width: calc(var(--logo) * 1.2);
+        max-width: none;
         height: auto;
+        margin-inline: calc(var(--logo) * -0.1);
       }
 
-      h1 {
-        font-size: 1.5rem;
+      .title {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+      }
+
+      /* After the pull-back, the logo's padding is only above and below the artwork (2.66% of its width).
+         Add the same at the sides of a logo link so its focus ring sits evenly around the artwork. */
+      a:has(> .logo) {
+        padding-inline: calc(var(--logo) * 0.0266);
+        margin-inline: calc(var(--logo) * -0.0266);
+      }
+
+      .lede {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        color: #9aa4ad;
+        text-wrap: balance;
+      }
+
+      .routes {
+        align-self: stretch;
+        margin-top: 2.5rem;
+        list-style: none;
+        border-top: 1px solid #343a40;
+      }
+
+      .routes li {
+        border-bottom: 1px solid #343a40;
+      }
+
+      .routes a {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: baseline;
+        gap: 0.25rem 1rem;
+        padding: 1.25rem 0;
+        text-decoration: none;
+      }
+
+      .route-name {
+        font-size: 1.125rem;
         font-weight: 600;
       }
 
-      p {
-        font-size: 1.25rem;
+      .route-url {
+        grid-row: 1;
+        grid-column: 2;
+        color: #468fee;
+        overflow-wrap: anywhere;
+      }
+
+      .route-desc {
+        grid-column: 1 / -1;
+        color: #9aa4ad;
+      }
+
+      .routes a:hover .route-name {
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+      }
+
+      @media (max-width: 34rem) {
+        main {
+          --logo: min(10rem, 100vw - 3rem);
+        }
+
+        .title {
+          font-size: 1.75rem;
+        }
+      }
+
+      /* Forced colors make the page background light, which would hide the logo's white wordmark. */
+      @media (forced-colors: active) {
+        .logo {
+          forced-color-adjust: none;
+          background: #1e2225;
+        }
       }
     </style>
   </head>
 
   <body>
     <main>
-      <a href="/"><img src="/truestamp-horizontal-full-color-white-text-pad10.svg" alt="Truestamp home" width="1160" height="308" /></a>
-      <h1>Page not found</h1>
-      <p>Find our projects at <a href="https://github.com/truestamp">github.com/truestamp</a>.</p>
+      <a href="/"><img class="logo" src="/truestamp-horizontal-full-color-white-text-pad10.svg" alt="Truestamp home" width="1160" height="308" /></a>
+      <h1 class="title">Page not found</h1>
+      <p class="lede">There's nothing at this address.</p>
+      <ul class="routes" role="list">
+        <li>
+          <a href="https://github.com/truestamp">
+            <span class="route-name">GitHub</span>
+            <span class="route-desc">Open-source proof specification, reference verifier, Merkle tree library and Go CLI.</span>
+            <span class="route-url">github.com/truestamp</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.truestamp.com/">
+            <span class="route-name">Website</span>
+            <span class="route-desc">Create timestamps and verify proofs.</span>
+            <span class="route-url">truestamp.com</span>
+          </a>
+        </li>
+      </ul>
     </main>
   </body>
 </html>
